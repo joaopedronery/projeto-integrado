@@ -1,0 +1,168 @@
+:root {
+  --bg-color: #f4f4f4;
+  --white-color: #ffffff;
+  --title-color: #000;
+  --text-color: #5f6165;
+  --text-color-light: #7c7c8d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+#main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#sus-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#side-bar {
+  flex: 0.2;
+  padding: 30px 24px;
+  background-color: var(--white-color);
+}
+
+.section-title {
+  color: var(--title-color);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+
+#side-bar-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-bar-options-item {
+  padding: 7px 8px;
+  border-radius: 8px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.side-bar-options-item:hover {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.side-bar-options-item-text {
+  color: var(--text-color);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#logout-button {
+  position: absolute;
+  display: flex;
+  bottom: 45px;
+  left: 45px;
+  gap: 5px;
+  align-items: center;
+}
+
+#logout-button-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#content {
+  overflow-y: scroll;
+  flex: 0.8;
+  background-color: var(--bg-color);
+}
+
+#content-title-container {
+  background-color: var(--white-color);
+  padding: 15px 31px;
+  border-left: 2px solid var(--bg-color);
+}
+
+#content-form-container {
+  width: 85%;
+  padding: 45px 30px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  min-height: 95%;
+}
+
+#content-form-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#separator {
+  height: 1px;
+  opacity: 0.4;
+  background-color: var(--text-color-light);
+  margin: 25px 0px;
+}
+
+#content-form {
+}
+
+#general-form-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0px 15% 0px 0px;
+  margin-bottom: 150px;
+}
+
+.label-and-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-light);
+}
+
+input {
+  padding: 16px 14px;
+  border-radius: 10px;
+  border: 0.9px solid var(--text-color-light);
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+.input-half-width {
+  width: 46.5%;
+}
+
+#icon-and-password-container {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
